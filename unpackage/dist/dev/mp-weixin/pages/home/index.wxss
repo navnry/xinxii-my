@@ -1,0 +1,66 @@
+@media (min-device-pixel-ratio: 1.5) {
+.m-border.data-v-71e217db::after {
+    -webkit-transform: scaleY(0.66666);
+    transform: scaleY(0.66666);
+}
+}
+@media (min-device-pixel-ratio: 2) {
+.m-border.data-v-71e217db::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+}
+@media (min-device-pixel-ratio: 2.25) {
+.m-border.data-v-71e217db::after {
+    -webkit-transform: scaleY(0.44444);
+    transform: scaleY(0.44444);
+}
+}
+@media (min-device-pixel-ratio: 2.5) {
+.m-border.data-v-71e217db::after {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+}
+}
+@media (min-device-pixel-ratio: 2.75) {
+.m-border.data-v-71e217db::after {
+    -webkit-transform: scaleY(0.3636);
+    transform: scaleY(0.3636);
+}
+}
+@media (min-device-pixel-ratio: 3) {
+.m-border.data-v-71e217db::after {
+    -webkit-transform: scaleY(0.33333);
+    transform: scaleY(0.33333);
+}
+}
+uni-modal .uni-modal.data-v-71e217db {
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+}
+uni-modal .uni-modal__hd.data-v-71e217db {
+  font-size: 34rpx;
+  padding-top: 24rpx;
+}
+uni-modal .uni-modal__bd.data-v-71e217db {
+  padding: 12rpx 24rpx 36rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+uni-modal .uni-modal__ft.data-v-71e217db {
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+.mint-item.data-v-71e217db {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.star-product.data-v-71e217db,
+.product-wrap.data-v-71e217db {
+  background-color: #fff;
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+}
+

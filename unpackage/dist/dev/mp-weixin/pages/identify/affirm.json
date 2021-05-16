@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "确认信息",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "加入新禧",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-steps": "/uview-ui/components/u-steps/u-steps",
+    "u-form": "/uview-ui/components/u-form/u-form",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/uview-ui/components/u-input/u-input",
+    "u-upload": "/uview-ui/components/u-upload/u-upload",
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
+}

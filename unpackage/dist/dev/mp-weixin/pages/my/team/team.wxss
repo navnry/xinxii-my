@@ -1,0 +1,57 @@
+@media (min-device-pixel-ratio: 1.5) {
+.m-border.data-v-f8ffe5b6::after {
+    -webkit-transform: scaleY(0.66666);
+    transform: scaleY(0.66666);
+}
+}
+@media (min-device-pixel-ratio: 2) {
+.m-border.data-v-f8ffe5b6::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+}
+@media (min-device-pixel-ratio: 2.25) {
+.m-border.data-v-f8ffe5b6::after {
+    -webkit-transform: scaleY(0.44444);
+    transform: scaleY(0.44444);
+}
+}
+@media (min-device-pixel-ratio: 2.5) {
+.m-border.data-v-f8ffe5b6::after {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+}
+}
+@media (min-device-pixel-ratio: 2.75) {
+.m-border.data-v-f8ffe5b6::after {
+    -webkit-transform: scaleY(0.3636);
+    transform: scaleY(0.3636);
+}
+}
+@media (min-device-pixel-ratio: 3) {
+.m-border.data-v-f8ffe5b6::after {
+    -webkit-transform: scaleY(0.33333);
+    transform: scaleY(0.33333);
+}
+}
+uni-modal .uni-modal.data-v-f8ffe5b6 {
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+}
+uni-modal .uni-modal__hd.data-v-f8ffe5b6 {
+  font-size: 34rpx;
+  padding-top: 24rpx;
+}
+uni-modal .uni-modal__bd.data-v-f8ffe5b6 {
+  padding: 12rpx 24rpx 36rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+uni-modal .uni-modal__ft.data-v-f8ffe5b6 {
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+page.data-v-f8ffe5b6 {
+  background-color: #fff;
+}
+

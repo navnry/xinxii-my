@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "朋友圈",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "b-refresh": "/components/b-refresh/b-refresh",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-image": "/uview-ui/components/u-image/u-image",
+    "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "b-friend-item": "/components/b-friend-item/b-friend-item",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-action-sheet": "/uview-ui/components/u-action-sheet/u-action-sheet"
+  }
+}

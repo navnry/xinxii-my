@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "x-textarea": "/components/x-textarea/x-textarea",
+    "u-upload": "/uview-ui/components/u-upload/u-upload",
+    "u-button": "/uview-ui/components/u-button/u-button"
+  }
+}

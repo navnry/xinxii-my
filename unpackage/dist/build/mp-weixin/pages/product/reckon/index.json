@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "保费试算",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
+    "x-check-box": "/components/x-check-box/x-check-box",
+    "x-date-picker": "/components/x-date-picker/x-date-picker"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="textarea u-border"><textarea maxlength="{{len}}" placeholder-style="color:rgba(153,153,153,1);" placeholder="{{placeholder}}" data-event-opts="{{[['input',[['__set_model',['','content','$event',[]]]]]]}}" value="{{content}}" bindinput="__e"></textarea><view class="tips"><view></view><view>{{''+contentLength+"/"+len}}</view></view></view>

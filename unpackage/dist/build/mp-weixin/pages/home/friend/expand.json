@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "拓业海报",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "b-waterfall": "/components/b-waterfall/b-waterfall",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

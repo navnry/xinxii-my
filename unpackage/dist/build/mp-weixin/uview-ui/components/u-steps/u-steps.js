@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uview-ui/components/u-steps/u-steps"],{"19b3":function(n,t,e){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var u={name:"u-steps",props:{mode:{type:String,default:"number"},list:{type:Array,default:function(){return[{name:"推荐关系"},{name:"实名认证"},{name:"填写资料"},{name:"合同签订"}]}},type:{type:String,default:"primary"},current:{type:[Number,String],default:0},activeColor:{type:String,default:"#ff6510"},unActiveColor:{type:String,default:"#909399"},icon:{type:String,default:"checkmark"},direction:{type:String,default:"row"}},data:function(){return{}}};t.default=u},"392b":function(n,t,e){"use strict";var u=e("d74b"),r=e.n(u);r.a},"500b":function(n,t,e){"use strict";e.d(t,"b",(function(){return r})),e.d(t,"c",(function(){return i})),e.d(t,"a",(function(){return u}));var u={uIcon:function(){return e.e("uview-ui/components/u-icon/u-icon").then(e.bind(null,"47ce"))},uLine:function(){return e.e("uview-ui/components/u-line/u-line").then(e.bind(null,"ce67"))}},r=function(){var n=this,t=n.$createElement;n._self._c},i=[]},5417:function(n,t,e){"use strict";e.r(t);var u=e("500b"),r=e("f251");for(var i in r)"default"!==i&&function(n){e.d(t,n,(function(){return r[n]}))}(i);e("392b");var a,c=e("f0c5"),o=Object(c["a"])(r["default"],u["b"],u["c"],!1,null,"998a18b6",null,!1,u["a"],a);t["default"]=o.exports},d74b:function(n,t,e){},f251:function(n,t,e){"use strict";e.r(t);var u=e("19b3"),r=e.n(u);for(var i in u)"default"!==i&&function(n){e.d(t,n,(function(){return u[n]}))}(i);t["default"]=r.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uview-ui/components/u-steps/u-steps-create-component',
+    {
+        'uview-ui/components/u-steps/u-steps-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("5417"))
+        })
+    },
+    [['uview-ui/components/u-steps/u-steps-create-component']]
+]);

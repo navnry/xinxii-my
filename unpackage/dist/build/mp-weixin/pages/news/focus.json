@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "每日焦点",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-tag": "/uview-ui/components/u-tag/u-tag",
+    "b-focus-item": "/components/b-focus-item/b-focus-item",
+    "u-divider": "/uview-ui/components/u-divider/u-divider"
+  }
+}

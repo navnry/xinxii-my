@@ -1,0 +1,99 @@
+@media (min-device-pixel-ratio: 1.5) {
+.m-border.data-v-3b2b1a80::after {
+    -webkit-transform: scaleY(0.66666);
+    transform: scaleY(0.66666);
+}
+}
+@media (min-device-pixel-ratio: 2) {
+.m-border.data-v-3b2b1a80::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+}
+@media (min-device-pixel-ratio: 2.25) {
+.m-border.data-v-3b2b1a80::after {
+    -webkit-transform: scaleY(0.44444);
+    transform: scaleY(0.44444);
+}
+}
+@media (min-device-pixel-ratio: 2.5) {
+.m-border.data-v-3b2b1a80::after {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+}
+}
+@media (min-device-pixel-ratio: 2.75) {
+.m-border.data-v-3b2b1a80::after {
+    -webkit-transform: scaleY(0.3636);
+    transform: scaleY(0.3636);
+}
+}
+@media (min-device-pixel-ratio: 3) {
+.m-border.data-v-3b2b1a80::after {
+    -webkit-transform: scaleY(0.33333);
+    transform: scaleY(0.33333);
+}
+}
+uni-modal .uni-modal.data-v-3b2b1a80 {
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+}
+uni-modal .uni-modal__hd.data-v-3b2b1a80 {
+  font-size: 34rpx;
+  padding-top: 24rpx;
+}
+uni-modal .uni-modal__bd.data-v-3b2b1a80 {
+  padding: 12rpx 24rpx 36rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+uni-modal .uni-modal__ft.data-v-3b2b1a80 {
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+view.data-v-3b2b1a80,
+scroll-view.data-v-3b2b1a80 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.data-v-3b2b1a80::-webkit-scrollbar,.data-v-3b2b1a80::-webkit-scrollbar,.data-v-3b2b1a80::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none;
+  background: transparent;
+}
+.u-scroll-box.data-v-3b2b1a80 {
+  position: relative;
+}
+.u-scroll-view.data-v-3b2b1a80 {
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+.u-tab-item.data-v-3b2b1a80 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+.u-tab-bar.data-v-3b2b1a80 {
+  position: absolute;
+  bottom: 0;
+}
+.u-tabs-scorll-flex.data-v-3b2b1a80 {
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+

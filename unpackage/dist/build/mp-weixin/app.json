@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/base/modal",
+    "pages/my/index",
+    "pages/news/index",
+    "pages/my/login",
+    "pages/my/wallet",
+    "pages/my/set",
+    "pages/my/order/list",
+    "pages/my/order/detail",
+    "pages/news/detail",
+    "pages/my/opinion",
+    "pages/product/index",
+    "pages/product/detail",
+    "pages/my/userinfo",
+    "pages/product/reckon/index",
+    "pages/news/focus",
+    "pages/my/recruit/recruit",
+    "pages/my/recruit/history",
+    "pages/home/friend/friend",
+    "pages/base/preview",
+    "pages/base/search",
+    "pages/my/bankcard",
+    "pages/identify/index",
+    "pages/identify/step1",
+    "pages/identify/step2",
+    "pages/identify/step3",
+    "pages/identify/step4",
+    "pages/identify/affirm",
+    "pages/home/friend/expand",
+    "pages/base/message"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "禧小保",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#BFBFBF",
+    "selectedColor": "#3688FF",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home_h.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/product/index",
+        "iconPath": "static/tabbar/catelog.png",
+        "selectedIconPath": "static/tabbar/catelog_h.png",
+        "text": "产品中心"
+      },
+      {
+        "pagePath": "pages/news/index",
+        "iconPath": "static/tabbar/news.png",
+        "selectedIconPath": "static/tabbar/news_h.png",
+        "text": "知识课堂"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my_h.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

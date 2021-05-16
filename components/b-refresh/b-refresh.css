@@ -1,0 +1,80 @@
+.mescroll-downwarp .downwarp-content {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+/*下拉刷新--上下箭头*/
+.mescroll-downwarp .downwarp-arrow {
+	display: inline-block;
+	width: 64rpx;
+	height: 64rpx;
+	background-image: url(./arrow-down.png);
+	background-size: 52%;
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: middle;
+	transition: transform 300ms;
+}
+
+.mescroll-downwarp .downwarp-arrow.rotate {
+	transform: rotate(180deg);
+}
+
+.mescroll-downwarp .downwarp-progress {
+	width: 64rpx;
+	height: 64rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
+
+.mescroll-downwarp .downwarp-tip {
+	margin-left: 12rpx;
+}
+
+@-webkit-keyframes load {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(.8);
+	}
+}
+
+.loading {
+	height: 64rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12rpx;
+}
+
+.loading text {
+	display: inline-block;
+	width: 8rpx;
+	height: 8rpx;
+	border-radius: 50%;
+	background: #aaa;
+	margin-right: 6rpx;
+	animation: load 1.2s ease infinite;
+}
+
+.loading text:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.loading text:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.loading text:nth-child(3) {
+	animation-delay: 0.4s;
+	margin-right: 0;
+}

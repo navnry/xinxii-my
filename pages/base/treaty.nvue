@@ -1,0 +1,188 @@
+<template>
+	<view class="treaty" ref="treaty">
+		<view class="treaty__container">
+			<view class="treaty__container__header">
+				<text class="treaty__container__header__text">{{title}}</text>
+			</view>
+			<view class="treaty__container__content">
+				<text class="treaty__container__content__text">
+					请你务必审慎阅读、充分理解”个人信息使用授权书“和”隐私政策“各条款，包括但不限于：为了更好的想你提供服务，我们需要收集你的设备标识、操作日志等信息用于分析、优化应用性能。</text>
+				<view style="margin-bottom: 18rpx;"></view>
+				<text class="treaty__container__content__text">
+					你可以阅读《个人信息使用授权书》和《隐私政策》了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。</text>
+			</view>
+			<view class="treaty__container__footer">
+				<view 
+					class="treaty__container__footer-left" 
+					hover-class="treaty__container__footer-hover"
+					:hover-start-time="20" :hover-stay-time="70" 
+					@click="buttonClick('cancel')">
+					<text class="treaty__container__footer-left__text">暂不同意</text>
+				</view>
+				<view class="treaty__container__footer-right" hover-class="treaty__container__footer-hover"
+					:hover-start-time="20" :hover-stay-time="70" @click="buttonClick('confirm')">
+					<text class="treaty__container__footer-right__text">同意并继续</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	// #ifdef APP-PLUS
+	const animation = weex.requireModule('animation');
+	// #endif
+	export default {
+		data() {
+			return {
+				title: "个人信息使用授权书和隐私政策"
+			}
+		},
+		onReady() {
+			// 添加动画，避免弹窗闪烁问题
+			// #ifdef APP-PLUS
+			animation.transition(this.$refs.treaty, {
+				styles: {
+					opacity: 1,
+					scale: 1
+				},
+				duration: 100,
+				timingFunction: 'ease'
+			});
+			// #endif
+		},
+		methods: {
+			closeModal() {
+				uni.switchTab({
+					url: '/pages/home/index'
+				})
+			},
+			buttonClick(type) {
+				this.closeModal();
+
+				if (type == 'cancel') {
+					// 点击取消
+					this.result = {
+						confirm: false,
+						cancel: true
+					}
+				} else {
+					// 点击确定
+					this.result = {
+						confirm: true,
+						cancel: false
+					}
+				}
+			}
+		}
+	}
+</script>
+
+<style lang="scss">
+	// nvue页面只支持flex布局
+	.treaty {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		flex: 1;
+		/* #ifndef APP-NVUE */
+		display: flex;
+		/* #endif */
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.4);
+		opacity: 0;
+		transform: scale(1.08);
+		transition-duration: .2s;
+		padding: 72rpx;
+		&__container {
+			flex: 1 0;
+			border-radius: 16rpx;
+			background-color: #fff;
+			overflow: hidden;
+			&__header {
+				/* #ifndef APP-NVUE */
+				display: flex;
+				/* #endif */
+				justify-content: center;
+				align-items: center;
+				height: 100rpx;
+				border-bottom-width: 1rpx;
+				border-color: #DCDCDF;
+				border-style: solid;
+				&__text {
+					font-size: 34rpx;
+					font-weight: 400;
+					color: #000000;
+				}
+			}
+			&__content {
+				/* #ifndef APP-NVUE */
+				display: flex;
+				/* #endif */
+				justify-content: center;
+				align-items: center;
+				padding: 24rpx;
+				&__text {
+					font-size: 30rpx;
+					color: #636363;
+					font-weight: 300;
+				}
+			}
+			&__footer {
+				/* #ifndef APP-NVUE */
+				display: flex;
+				/* #endif */
+				justify-content: center;
+				align-items: center;
+				flex-direction: row;
+				height: 100rpx;
+				position: relative;
+				&-left {
+					/* #ifndef APP-NVUE */
+					display: flex;
+					/* #endif */
+					flex: 1;
+					justify-content: center;
+					align-items: center;
+					height: 100rpx;
+					border-top-width: 1rpx;
+					border-right-width: 1rpx;
+					border-color: #DCDCDF;
+					border-style: solid;
+					border-bottom-left-radius: 16rpx;
+					// padding: 22rpx;
+					&__text {
+						font-size: 34rpx;
+						font-weight: 500;
+					}
+				}
+				&-right {
+					/* #ifndef APP-NVUE */
+					display: flex;
+					/* #endif */
+					flex: 1;
+					justify-content: center;
+					align-items: center;
+					height: 100rpx;
+					border-top-width: 1rpx;
+					// border-right-width: 1rpx;
+					border-color: #DCDCDF;
+					border-style: solid;
+					border-bottom-right-radius: 16rpx;
+					padding: 22rpx;
+					&__text {
+						font-size: 34rpx;
+						font-weight: 500;
+						color: #0094ff;
+					}
+				}
+				&-hover {
+					background-color: #f1f1f1;
+				}
+			}
+		}
+	}
+</style>

@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "知识课堂",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-badge": "/uview-ui/components/u-badge/u-badge",
+    "b-refresh": "/components/b-refresh/b-refresh",
+    "b-focus-item": "/components/b-focus-item/b-focus-item",
+    "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "b-article-item": "/components/b-article-item/b-article-item",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

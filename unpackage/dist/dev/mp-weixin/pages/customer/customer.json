@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "客户管理",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
+    "u-index-list": "/uview-ui/components/u-index-list/u-index-list",
+    "u-index-anchor": "/uview-ui/components/u-index-anchor/u-index-anchor",
+    "u-avatar": "/uview-ui/components/u-avatar/u-avatar"
+  }
+}

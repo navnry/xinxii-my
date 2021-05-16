@@ -1,0 +1,1 @@
+<view><u-navbar vue-id="27ec80e6-1" title="全部记录" bind:__l="__l"></u-navbar><block wx:if="{{list.length>0}}"><view></view></block><block wx:else><view class="u-p-48"><u-empty vue-id="27ec80e6-2" text="暂无数据" bind:__l="__l"></u-empty></view></block></view>

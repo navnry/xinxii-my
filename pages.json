@@ -1,0 +1,72 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"tabBar": {
+		"color": "#BFBFBF", //文本颜色
+		"selectedColor": "#3688FF", //激活文本颜色
+		"borderStyle": "black", // 边框颜色
+		"backgroundColor": "#fff", // 背景颜色
+		"list": [
+			{"pagePath": "pages/home/index","iconPath": "static/tabbar/home.png","selectedIconPath": "static/tabbar/home_h.png","text": "首页"},
+			{"pagePath": "pages/product/index","iconPath": "static/tabbar/catelog.png","selectedIconPath": "static/tabbar/catelog_h.png","text": "产品中心"},
+			{"pagePath": "pages/news/index","iconPath": "static/tabbar/news.png","selectedIconPath": "static/tabbar/news_h.png","text": "知识课堂"},
+			{"pagePath": "pages/my/index","iconPath": "static/tabbar/my.png","selectedIconPath": "static/tabbar/my_h.png","text": "我的"}
+		]
+	},
+	"pages": [
+		{"path": "pages/home/index","style": {"navigationBarTitleText": "首页"}},
+		{"path": "pages/home/friend/friend","style" :{"navigationBarTitleText": "朋友圈"}},
+		{"path" : "pages/home/friend/expand","style" :{"navigationBarTitleText": "拓业海报"}},
+		// nvue页面弹窗
+		{"path": "pages/base/modal","style": {"navigationStyle": "custom","app-plus": {"animationType": "fade-in","background": "transparent","backgroundColor": "rgba(0,0,0,0)","popGesture": "none","animationDuration": "200","navigationBarTextStyle": "white"}}},
+		{"path": "pages/base/preview","style" :{"navigationBarTitleText": "查看大图","animationType":"zoom-fade-out"}},
+		{"path": "pages/base/search","style" :{"navigationBarTitleText": "搜索"}},
+		{"path": "pages/base/message","style" :{"navigationBarTitleText": "消息管理"}},
+		{"path": "pages/base/login","style": {"navigationBarTitleText": "登录"}},
+		{"path": "pages/product/index","style" :{"navigationBarTitleText": "产品中心"}},
+		{"path": "pages/product/detail","style" :{"navigationBarTitleText": "产品详情"}},
+		{"path": "pages/product/reckon/index","style" :{"navigationBarTitleText": "保费试算"}},
+		{"path": "pages/news/index","style": {"navigationBarTitleText": "知识课堂"}},
+		{"path": "pages/news/detail","style": {"navigationBarTitleText": "详情"}},
+		{"path": "pages/news/focus","style" :{"navigationBarTitleText": "每日焦点"}},
+		{"path": "pages/my/index","style": {"navigationBarTitleText": "我的"}},
+		{"path": "pages/my/wallet/wallet","style": {"navigationBarTitleText": ""}},
+		{"path": "pages/my/set/set","style": {"navigationBarTitleText": "设置"}},
+		{"path": "pages/my/order/list","style": {"navigationBarTitleText": "订单列表"}},
+		{"path": "pages/my/order/detail","style": {"navigationBarTitleText": "订单详情"}},
+		{"path": "pages/my/opinion/opinion","style": {"navigationBarTitleText": ""}},
+		{"path": "pages/my/userinfo/userinfo","style" :{"navigationBarTitleText": "个人中心"}},
+		{"path": "pages/my/recruit/recruit","style" :{"navigationBarTitleText": "增员认证"}},
+		{"path": "pages/my/recruit/history","style" :{"navigationBarTitleText": "全部记录"}},
+		{"path": "pages/my/wallet/bankcard","style" :{"navigationBarTitleText": "银行卡"}},
+		{"path": "pages/identify/index","style" :{"navigationBarTitleText": "加入新禧"}},
+		{"path": "pages/identify/step1","style" :{"navigationBarTitleText": "推荐关系"}},
+		{"path": "pages/identify/step2","style" :{"navigationBarTitleText": "身份认证"}},
+		{"path": "pages/identify/step3","style" :{"navigationBarTitleText": "填写资料"}},
+		{"path": "pages/identify/step4","style" :{"navigationBarTitleText": "合同签订"}},
+		{"path": "pages/identify/affirm","style" :{"navigationBarTitleText": "确认信息"}},
+		{"path": "pages/customer/customer","style" :{"navigationBarTitleText": "客户管理"}},
+		{"path" : "pages/my/team/team","style" :{"navigationBarTitleText": "我的团队"}},
+		{"path" : "pages/my/wallet/detail","style" :{"navigationBarTitleText": ""}},
+		{"path" : "pages/choseCity/choseCity","style" :{"navigationBarTitleText": ""}}
+        ,{
+            "path" : "pages/my/test",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "禧小保",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom",
+		"app-plus": {"bounce": "none"},
+		"enablePullDownRefresh":false
+	}
+}

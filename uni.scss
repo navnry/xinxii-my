@@ -1,0 +1,109 @@
+@mixin text-line($line: 2){ text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: $line; -webkit-box-orient: vertical; }
+
+// @import "uview-ui/theme.scss";
+@import "uview-ui/uview.theme.scss";
+
+@mixin m-border($color,$direction,$radius){
+	position: relative;
+	&:after{
+		/* #ifndef APP-NVUE */
+		content: ' ';
+		/* #endif */
+		position: absolute;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+		box-sizing: border-box;
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+		width: 199.8%;
+		height: 199.8%;
+		transform: scale(0.5, 0.5);
+		border-color: $color;
+		border-style: solid;
+		z-index: 2;
+		border-radius: $radius;
+		border-width: 0;
+		@if $direction == left{
+			border-left-width:1px;
+		}@else if $direction == bottom{
+			border-bottom-width:1px;
+		}@else if $direction == right{
+			border-right-width:1px;
+		}@else if $direction == top{
+			border-top-width:1px;
+		}@else{
+			border-width: 1px;
+		}
+	}
+}@media(min-device-pixel-ratio: 1.5){
+	 .m-border{
+		 &::after{
+			-webkit-transform: scaleY(0.66666);
+			transform: scaleY(0.66666);
+		 }
+	 }
+}
+@media(min-device-pixel-ratio: 2){
+	.m-border{
+		&::after{
+			-webkit-transform: scaleY(0.5);
+			transform: scaleY(0.5);
+		}
+	}
+}
+@media(min-device-pixel-ratio: 2.25){
+	.m-border{
+		&::after{
+			-webkit-transform: scaleY(0.44444);
+			transform: scaleY(0.44444);
+		}
+	}
+}
+@media(min-device-pixel-ratio: 2.5){
+	.m-border{
+		&::after{
+			-webkit-transform: scaleY(0.4);
+			transform: scaleY(0.4);
+		}
+	}
+}
+@media(min-device-pixel-ratio: 2.75){
+	.m-border{
+		&::after{
+			-webkit-transform: scaleY(0.3636);
+			transform: scaleY(0.3636);
+		}
+	}
+}
+@media(min-device-pixel-ratio: 3){
+	.m-border{
+		&::after{
+			-webkit-transform: scaleY(0.33333);
+			transform: scaleY(0.33333);
+		}
+	}
+}
+/* #ifndef APP-PLUS */
+
+uni-modal {
+	
+	.uni-modal{
+		border-radius: 12rpx;
+	}
+	.uni-modal__hd{
+		font-size: 34rpx;
+		padding-top: 24rpx;
+	}
+	.uni-modal__bd{
+		padding:12rpx 24rpx 36rpx;
+		font-size: 30rpx;
+		font-weight: 400;
+	}
+	.uni-modal__ft{
+		line-height: 88rpx;
+		font-size: 32rpx;
+	}
+}
+
+/* #endif */

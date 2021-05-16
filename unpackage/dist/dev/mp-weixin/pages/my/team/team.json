@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的团队",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "b-team-list": "/components/b-team-list/b-team-list"
+  }
+}

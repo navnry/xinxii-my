@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "u-tag": "/uview-ui/components/u-tag/u-tag",
+    "u-image": "/uview-ui/components/u-image/u-image"
+  },
+  "component": true
+}

@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-tag": "/uview-ui/components/u-tag/u-tag",
+    "b-friend-item": "/components/b-friend-item/b-friend-item",
+    "b-article-item": "/components/b-article-item/b-article-item",
+    "b-product-item": "/components/b-product-item/b-product-item",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-empty": "/uview-ui/components/u-empty/u-empty"
+  }
+}

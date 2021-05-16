@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "产品中心",
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-badge": "/uview-ui/components/u-badge/u-badge",
+    "b-refresh": "/components/b-refresh/b-refresh",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-popup": "/uview-ui/components/u-popup/u-popup"
+  }
+}

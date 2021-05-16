@@ -1,0 +1,107 @@
+@media (min-device-pixel-ratio: 1.5) {
+.m-border.data-v-4dcceeb0::after {
+    -webkit-transform: scaleY(0.66666);
+    transform: scaleY(0.66666);
+}
+}
+@media (min-device-pixel-ratio: 2) {
+.m-border.data-v-4dcceeb0::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+}
+@media (min-device-pixel-ratio: 2.25) {
+.m-border.data-v-4dcceeb0::after {
+    -webkit-transform: scaleY(0.44444);
+    transform: scaleY(0.44444);
+}
+}
+@media (min-device-pixel-ratio: 2.5) {
+.m-border.data-v-4dcceeb0::after {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+}
+}
+@media (min-device-pixel-ratio: 2.75) {
+.m-border.data-v-4dcceeb0::after {
+    -webkit-transform: scaleY(0.3636);
+    transform: scaleY(0.3636);
+}
+}
+@media (min-device-pixel-ratio: 3) {
+.m-border.data-v-4dcceeb0::after {
+    -webkit-transform: scaleY(0.33333);
+    transform: scaleY(0.33333);
+}
+}
+uni-modal .uni-modal.data-v-4dcceeb0 {
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+}
+uni-modal .uni-modal__hd.data-v-4dcceeb0 {
+  font-size: 34rpx;
+  padding-top: 24rpx;
+}
+uni-modal .uni-modal__bd.data-v-4dcceeb0 {
+  padding: 12rpx 24rpx 36rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+uni-modal .uni-modal__ft.data-v-4dcceeb0 {
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+.camera.data-v-4dcceeb0 {
+  width: 54px;
+  height: 44px;
+}
+.camera.data-v-4dcceeb0:active {
+  background-color: #ededed;
+}
+.user-box.data-v-4dcceeb0 {
+  background-color: #f6f7f8;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-bottom: 96rpx;
+  margin-bottom: -24rpx;
+}
+.user-box.data-v-4dcceeb0::after {
+  content: '';
+  width: 150%;
+  height: 200rpx;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: scale(2) translateX(-50%);
+          transform: scale(2) translateX(-50%);
+  z-index: -1;
+  -webkit-border-radius: 0 0 50% 50%;
+          border-radius: 0 0 50% 50%;
+  background: #fff;
+}
+.user-bar.data-v-4dcceeb0 {
+  margin: 0 24rpx;
+  position: relative;
+  top: -24rpx;
+  z-index: 2;
+}
+.user-bar .user-bar-wrap.data-v-4dcceeb0 {
+  height: 88rpx;
+  background-color: #333;
+  -webkit-border-radius: 12rpx 12rpx 0 0;
+          border-radius: 12rpx 12rpx 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0 24rpx;
+  font-size: 26rpx;
+  color: #FEA748;
+}
+
