@@ -7,6 +7,7 @@
 	export default {
 		onLaunch: function() {
 
+			
 			/* 存储用户信息 */
 			let userInfo = this.$storage.get('userInfo')
 			if (userInfo) {
