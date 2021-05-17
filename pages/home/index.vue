@@ -137,11 +137,7 @@
 			this.getHomeBanner()
 			this.getAiringList()
 			// console.log(this.message)
-
-			const arr = [1000, 3000, 5000, 4000, 2000]
-			for (let i of arr) {
-				setTimeout(() => console.log(i), i)
-			}
+			
 		},
 		methods: {
 			closeCity() {
