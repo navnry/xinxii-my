@@ -2,15 +2,18 @@
 	<view class="content">
 		<u-navbar title="登录" :border-bottom="false" />
 		<view class="main">
-			<view class="logo u-flex u-row-center u-m-t-48"><u-image width="222rpx" height="72rpx" src="@/static/my/login_logo.png" :fade="false"></u-image></view>
+			<view class="logo u-flex u-row-center u-m-t-48">
+				<u-image width="222rpx" height="72rpx" src="@/static/my/login_logo.png" :fade="false" />
+			</view>
 			<view class="u-p-t-64">
 				<view class="u-m-l-64 u-m-r-64 u-m-t-48">
 					<view class="u-flex u-border-bottom">
-						<!-- <view class="u-m-r-18" v-show="isCodeLogin">
-							<text class="u-font-28 u-content-color u-m-r-8">+86</text>
-							<u-icon name="arrow-right" color="#606266" size="24" />
-						</view> -->
-						<u-input v-model="loginParams.username" height="100" type="number" maxlength="11" placeholder="请输入手机号" />
+						<u-input 
+							v-model="loginParams.username" 
+							height="100" 
+							type="number" 
+							maxlength="11" 
+							placeholder="请输入手机号" />
 					</view>
 					<view class="u-flex u-border-bottom">
 						<u-input
@@ -144,38 +147,14 @@ export default {
 					verifyCode: this.loginParams.password
 				};
 				this.logining = true;
-				this.$api.codeLogin(loginInfo).then(res => {
-					this.logining = false;
-					if (res.success) {
-						this.logining = false;
-						this.$store.commit('LOGIN', res.data);
-						this.$u.toast('登录成功');
-						setTimeout(() => {
-							this.$store.dispatch('afterLogin');
-						}, 1500);
-					} else {
-						this.$u.toast(res.description);
-					}
-				});
+				this.toLogin()
 			} else {
 				//使用密码登录
 				if (this.loginParams.password == '') {
 					this.$u.toast('密码不能为空');
 					return;
 				}
-				this.$api.passwordLogin(this.loginParams).then(res => {
-					console.log(res);
-					if (res.success) {
-						this.logining = false;
-						this.$store.commit('LOGIN', res.data);
-						this.$u.toast('登录成功');
-						setTimeout(() => {
-							this.$store.dispatch('afterLogin');
-						}, 1500);
-					} else {
-						this.$u.toast(res.description);
-					}
-				});
+				this.toLogin()
 			}
 		},
 
@@ -186,7 +165,49 @@ export default {
 			this.$u.toast('点击了忘记密码');
 		},
 		toOauth() {},
-
+		
+		toLogin(){
+			uni.showLoading({
+				mask:true,
+				title:"登录中",
+			})
+			if(this.isCodeLogin){
+				setTimeout(()=>{
+					this.$api.codeLogin(loginInfo).then(res => {
+						uni.hideLoading()
+						this.logining = false;
+						if (res.success) {
+							this.logining = false;
+							this.$store.commit('LOGIN', res.data);
+							this.$u.toast('登录成功');
+							setTimeout(() => {
+								this.$store.dispatch('afterLogin');
+							}, 1500);
+						} else {
+							this.$u.toast(res.description);
+						}
+					});
+				},2000)
+			}else{
+				setTimeout(()=>{
+					this.$api.passwordLogin(this.loginParams).then(res => {
+						// console.log(res);
+						uni.hideLoading()
+						if (res.success) {
+							this.logining = false;
+							this.$store.commit('LOGIN', res.data);
+							this.$u.toast('登录成功');
+							setTimeout(() => {
+								this.$store.dispatch('afterLogin');
+							}, 1500);
+						} else {
+							this.$u.toast(res.description);
+						}
+					});
+				},2000)
+			}
+		},
+		
 		oauth() {
 			uni.login({
 				provider: 'weixin',
