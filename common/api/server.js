@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Request from '@/common/libs/luch-request/index.js'
+import store from '@/store'
 const http = new Request()
 let _this = new Vue()
-import store from '@/store'
+
 
 /* 设置全局配置 */
 http.setConfig((config) => {
@@ -31,7 +32,7 @@ http.interceptors.request.use((config) => {
 	if (userInfo && userInfo.token) {
 		config.header.Authorization = userInfo.token
 	}
-	console.log(config)
+	// console.log(config)
 	return config
 }, (config) => {
 	return Promise.reject(config)
